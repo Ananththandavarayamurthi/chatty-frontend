@@ -2,10 +2,12 @@ import React from 'react';
 import axios from 'axios';
 import {useEffect, useState} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import Logo from "../assets/logo.svg";
 import { resetpasswordRoute } from '../utils/APIRoutes';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export default function Resetpassword() {
     const [userData, setUserData] = useState({userId: '', token: '', password: ''});
