@@ -86,6 +86,9 @@ export default function Login() {
           <span>
             Don't have an account ? <Link to="/register">Create One.</Link>
           </span>
+          <span>
+             <Link to="/forgotpassword">Forgotpassword ?</Link>
+          </span>
         </form>
       </FormContainer>
       <ToastContainer />
