@@ -6,14 +6,12 @@ import Logo from "../assets/logo.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styled from "styled-components";
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 export default function Forgotpassword() {
     
     const [isEmailSent, setIsEmailSent] = useState(false);
 
-    const navigate = useNavigate();
   const [values, setValues] = useState({ email: "" });
   const toastOptions = {
     position: "bottom-right",

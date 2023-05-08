@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Logo from "../assets/logo.svg";
 import { resetpasswordRoute } from '../utils/APIRoutes';
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
@@ -15,13 +15,7 @@ export default function Resetpassword() {
     const search = useLocation().search;
     const token = new URLSearchParams(search).get('token');
     const userId = new URLSearchParams(search).get('id');
-    const toastOptions = {
-        position: "bottom-right",
-        autoClose: 8000,
-        pauseOnHover: true,
-        draggable: true,
-        theme: "dark",
-      };
+    
 
     useEffect(() => {
         setUserData({...userData, userId: userId, token: token})
