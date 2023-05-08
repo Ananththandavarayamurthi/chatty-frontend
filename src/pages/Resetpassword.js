@@ -6,7 +6,6 @@ import { resetpasswordRoute } from '../utils/APIRoutes';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styled from "styled-components";
-import { useNavigate } from 'react-router-dom';
 
 export default function Resetpassword() {
     const [userData, setUserData] = useState({userId: '', token: '', password: ''});
@@ -41,7 +40,7 @@ export default function Resetpassword() {
     return (
         <div>
             <FormContainer>
-        <form action="" onSubmit={(event) => handleSubmit(event)}>
+        <form action="" onSubmit={(event) => handleLogin(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />
             <h1>chatty</h1>
