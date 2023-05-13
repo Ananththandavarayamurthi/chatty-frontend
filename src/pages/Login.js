@@ -83,6 +83,8 @@ export default function Login() {
             onChange={(e) => handleChange(e)}
           />
           <button type="submit">Log In</button>
+        <p>USER:sakthi
+          PASSWORD:sakthi@123</P>
           <span>
             Don't have an account ? <Link to="/register">Create One.</Link>
           </span>
