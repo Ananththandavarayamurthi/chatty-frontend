@@ -84,7 +84,7 @@ export default function Login() {
           />
           <button type="submit">Log In</button>
         <p>USER:sakthi
-          PASSWORD:sakthi@123</P>
+          PASSWORD:sakthi@123</p>
           <span>
             Don't have an account ? <Link to="/register">Create One.</Link>
           </span>
